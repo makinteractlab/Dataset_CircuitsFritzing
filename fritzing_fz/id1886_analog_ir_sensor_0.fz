@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module fritzingVersion="0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806" icon=".png">
+    <boards>
+        <board moduleId="TwoLayerRectanglePCBModuleID" title="Rectangular PCB - Resizable" instance="PCB1" width="8.46667cm" height="5.64444cm"/>
+    </boards>
+    <views>
+        <view name="breadboardView" backgroundColor="#ffffff" gridSize="0.1in" showGrid="0" alignToGrid="1" viewFromBelow="0"/>
+        <view name="schematicView" backgroundColor="#ffffff" gridSize="0.1in" showGrid="1" alignToGrid="1" viewFromBelow="0"/>
+        <view name="pcbView" backgroundColor="#333333" gridSize="0.1in" showGrid="1" alignToGrid="1" viewFromBelow="0" GPG_Keepout="" DRC_Keepout="" autorouteViaRingThickness="" autorouteViaHoleSize="" autorouteTraceWidth="24"/>
+    </views>
+    <instances>
+        <instance moduleIdRef="TwoLayerRectanglePCBModuleID" modelIndex="7961" path=":/resources/parts/core/rectangle_pcb_two_layers.fzp">
+            <property name="layers" value="2"/>
+            <property name="width" value="84.666666666666671"/>
+            <property name="height" value="56.444444444444443"/>
+            <title>PCB1</title>
+            <views>
+                <breadboardView layer="">
+                    <geometry z="0.50001" x="0" y="0"/>
+                </breadboardView>
+                <pcbView layer="board">
+                    <geometry z="1.50001" x="50" y="10"/>
+                </pcbView>
+                <schematicView layer="">
+                    <geometry z="0.50001" x="0" y="0"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="beab33bd7feee277622ef76dd6e79e4d" modelIndex="10320" path="C:/Users/zirafa/Desktop/Fritzing/fritzing.0.9.3b.64.pc/fritzing-parts/core/infrared_proximity_sensor.fzp">
+            <title>J2</title>
+            <views>
+                <breadboardView layer="breadboard">
+                    <geometry z="3.00003" x="-417.651" y="-6.09371"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="breadboard">
+                            <geometry x="57.3399" y="45.76"/>
+                            <leg>
+                                <point x="0" y="0"/>
+                                <bezier>
+                                    <cp0 x="0.671785" y="35.8035"/>
+                                    <cp1 x="-119.594" y="2.78012"/>
+                                </bezier>
+                                <point x="-53.3778" y="68.2325"/>
+                                <bezier/>
+                            </leg>
+                            <connects>
+                                <connect connectorId="connector115" modelIndex="10325" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="breadboard">
+                            <geometry x="66.2886" y="45.76"/>
+                            <leg>
+                                <point x="0" y="0"/>
+                                <bezier>
+                                    <cp0 x="-0.945627" y="24.6242"/>
+                                    <cp1 x="9.67229" y="68.2325"/>
+                                </bezier>
+                                <point x="9.67229" y="68.2325"/>
+                                <bezier/>
+                            </leg>
+                            <connects>
+                                <connect connectorId="connector1189" modelIndex="10325" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector2" layer="breadboard">
+                            <geometry x="75.2274" y="45.76"/>
+                            <leg>
+                                <point x="0" y="0"/>
+                                <bezier>
+                                    <cp0 x="2.34452" y="28.6239"/>
+                                    <cp1 x="18.7348" y="68.2325"/>
+                                </bezier>
+                                <point x="18.7348" y="68.2325"/>
+                                <bezier/>
+                            </leg>
+                            <connects>
+                                <connect connectorId="connector1187" modelIndex="10325" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <schematicView layer="schematic">
+                    <geometry z="3.00003" x="-320.004" y="-102.847">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="41.5506" m32="13.4456" m33="1"/>
+                    </geometry>
+                    <titleGeometry visible="true" x="-291.899" y="-109.847" z="7.00003" xOffset="28.105" yOffset="-7" textColor="#000000" fontSize="5">
+                        <displayKey key=""/>
+                        <displayKey key="part number"/>
+                    </titleGeometry>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematic">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector115" modelIndex="10325" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematic">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1189" modelIndex="10325" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector2" layer="schematic">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1187" modelIndex="10325" layer="schematic"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+                <pcbView layer="copper0">
+                    <geometry z="6.00003" x="47.7" y="11.7">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="21.6" m32="9" m33="1"/>
+                    </geometry>
+                    <titleGeometry visible="true" x="60.3" y="4.7" z="13" xOffset="12.6" yOffset="-7" textColor="#000000" fontSize="5">
+                        <displayKey key=""/>
+                    </titleGeometry>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector115" modelIndex="10325" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1189" modelIndex="10325" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector2" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1187" modelIndex="10325" layer="copper0"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="STM32_Nucleo_board" modelIndex="10325" path="C:/Users/zirafa/Desktop/Fritzing/fritzing.0.9.3b.64.pc/fritzing-parts/core/STM32_Nucleo_board.fzp">
+            <title>J3</title>
+            <views>
+                <breadboardView layer="breadboardbreadboard">
+                    <geometry z="2.00003" x="-431.55" y="69.55">
+                        <transform m11="-1" m12="0" m13="0" m21="0" m22="-1" m23="0" m31="296.411" m32="247.8" m33="1"/>
+                    </geometry>
+                    <connectors>
+                        <connector connectorId="connector115" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="10320" layer="breadboard"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1187" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector2" modelIndex="10320" layer="breadboard"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1189" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="10320" layer="breadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <schematicView layer="schematic">
+                    <geometry z="3.00003" x="-333" y="-53.9988"/>
+                    <titleGeometry visible="true" x="-198.453" y="-60.9988" z="7.00004" xOffset="134.546" yOffset="-7" textColor="#000000" fontSize="5">
+                        <displayKey key=""/>
+                        <displayKey key="part number"/>
+                    </titleGeometry>
+                    <connectors>
+                        <connector connectorId="connector115" layer="schematic">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="10320" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1187" layer="schematic">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector2" modelIndex="10320" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1189" layer="schematic">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="10320" layer="schematic"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+                <pcbView layer="copper0">
+                    <geometry z="6.00004" x="85.3674" y="240.6"/>
+                    <titleGeometry visible="true" x="378.291" y="233.6" z="13" xOffset="292.924" yOffset="-7" textColor="#000000" fontSize="5">
+                        <displayKey key=""/>
+                    </titleGeometry>
+                    <connectors>
+                        <connector connectorId="connector115" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="10320" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1187" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector2" modelIndex="10320" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1189" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="10320" layer="copper0"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+    </instances>
+</module>

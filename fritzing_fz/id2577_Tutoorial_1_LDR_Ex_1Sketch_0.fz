@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module fritzingVersion="0.9.2b.11.19.8d2d5970658f0bed09c661c9ea9a515b5f40f44c">
+    <boards>
+        <board moduleId="TwoLayerRectanglePCBModuleID" title="Rectangular PCB - Resizable" instance="PCB1" width="8.46667cm" height="5.64444cm"/>
+    </boards>
+    <views>
+        <view name="breadboardView" backgroundColor="#ffffff" gridSize="0.1in" showGrid="1" alignToGrid="1" viewFromBelow="0"/>
+        <view name="schematicView" backgroundColor="#ffffff" gridSize="0.1in" showGrid="1" alignToGrid="1" viewFromBelow="0"/>
+        <view name="pcbView" backgroundColor="#333333" gridSize="0.1in" showGrid="1" alignToGrid="1" viewFromBelow="0" autorouteTraceWidth="24"/>
+    </views>
+    <instances>
+        <instance moduleIdRef="TwoLayerRectanglePCBModuleID" modelIndex="5736" path=":/resources/parts/core/rectangle_pcb_two_layers.fzp">
+            <property name="layers" value="2"/>
+            <property name="width" value="84.6666666666667"/>
+            <property name="height" value="56.4444444444444"/>
+            <title>PCB1</title>
+            <views>
+                <pcbView layer="board">
+                    <geometry z="1.5" x="142" y="5"/>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="0" y="0"/>
+                </breadboardView>
+                <schematicView layer="">
+                    <geometry z="0" x="0" y="0"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="ResistorModuleID" modelIndex="5789" path="E:/ELECTRONICS/fritzing.0.9.2b.64.pc/fritzing.0.9.2b.64.pc/pdb/core/resistor.fzp">
+            <property name="tolerance" value="±5%"/>
+            <property name="resistance" value="10k"/>
+            <property name="pin spacing" value="400 mil"/>
+            <title>R2</title>
+            <views>
+                <breadboardView layer="breadboard">
+                    <geometry z="2.5" x="-37.1417" y="256.634">
+                        <transform m11="1.11022e-16" m12="1" m13="0" m21="-1" m22="1.11022e-16" m23="0" m31="23.6822" m32="-14.9431" m33="1"/>
+                    </geometry>
+                    <connectors>
+                        <connector connectorId="connector0" layer="breadboard">
+                            <geometry x="2.619" y="4.5405"/>
+                            <leg>
+                                <point x="0" y="0"/>
+                                <bezier/>
+                                <point x="-1.3095" y="0"/>
+                                <bezier/>
+                            </leg>
+                            <connects>
+                                <connect connectorId="pin11C" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="breadboard">
+                            <geometry x="36.0063" y="4.5405"/>
+                            <leg>
+                                <point x="0" y="0"/>
+                                <bezier/>
+                                <point x="10.3032" y="0.00109008"/>
+                                <bezier/>
+                            </leg>
+                            <connects>
+                                <connect connectorId="pin11X" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <schematicView layer="schematic">
+                    <geometry z="2.5" x="-189.437" y="-57.8702">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="22.3075" m32="-14.5675" m33="1"/>
+                    </geometry>
+                    <titleGeometry visible="true" x="-152.562" y="-71.8702" z="6.50001" xOffset="36.875" yOffset="-14" textColor="#000000" fontSize="5">
+                        <displayKey key=""/>
+                        <displayKey key="part number"/>
+                        <displayKey key="resistance"/>
+                        <displayKey key="power"/>
+                    </titleGeometry>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematic">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin11C" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematic">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin11X" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+                <pcbView layer="copper0">
+                    <geometry z="5.50001" x="194.625" y="5.13"/>
+                    <titleGeometry visible="true" x="237.375" y="-1.87" z="12.5" xOffset="42.75" yOffset="-7" textColor="#000000" fontSize="5">
+                        <displayKey key=""/>
+                    </titleGeometry>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin11C" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin11X" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="2010BBCD20113" modelIndex="5812" path="E:/ELECTRONICS/fritzing.0.9.2b.64.pc/fritzing.0.9.2b.64.pc/pdb/core/LDR_photocell_300mil.fzp">
+            <title>R3</title>
+            <views>
+                <breadboardView layer="breadboard">
+                    <geometry z="2.50001" x="-27.6828" y="178.06">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="22.0375" m32="-8.37252" m33="1"/>
+                    </geometry>
+                    <connectors>
+                        <connector connectorId="connector0" layer="breadboard">
+                            <geometry x="1.3125" y="6.77499"/>
+                            <leg>
+                                <point x="0" y="0"/>
+                                <bezier/>
+                                <point x="-36" y="5.57967"/>
+                                <bezier/>
+                            </leg>
+                            <connects>
+                                <connect connectorId="pin11Y" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="breadboard">
+                            <geometry x="29.0975" y="6.77499"/>
+                            <leg>
+                                <point x="0" y="0"/>
+                                <bezier/>
+                                <point x="26.215" y="5.59654"/>
+                                <bezier/>
+                            </leg>
+                            <connects>
+                                <connect connectorId="pin11E" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <schematicView layer="schematic">
+                    <geometry z="2.50001" x="-193.937" y="-225.45"/>
+                    <titleGeometry visible="true" x="-139.063" y="-232.45" z="6.50002" xOffset="54.875" yOffset="-7" textColor="#000000" fontSize="5">
+                        <displayKey key=""/>
+                        <displayKey key="part number"/>
+                    </titleGeometry>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematic">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin11Y" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematic">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin11E" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+                <pcbView layer="copper0">
+                    <geometry z="5.50002" x="140.625" y="23.625"/>
+                    <titleGeometry visible="true" x="174.375" y="16.625" z="12.5" xOffset="33.75" yOffset="-7" textColor="#000000" fontSize="5">
+                        <displayKey key=""/>
+                    </titleGeometry>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin11Y" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin11E" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="newBreadboardLogoImageModuleID" modelIndex="85410517" path=":/resources/parts/core/newbreadboardlogoimage.fzp">
+            <property name="color" value="#787878"/>
+            <property name="width" value="72.335898"/>
+            <property name="height" value="80.804512"/>
+            <property name="shape" value="&lt;?xml version='1.0' encoding='UTF-8' standalone='no'?&gt;&#10;&lt;!-- Created with Fritzing (http://www.fritzing.org/) --&gt;&#10;&lt;svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='2.84787in' height='3.18128in' viewBox='0 0 205 229' xmlns:xlink='http://www.w3.org/1999/xlink'&gt;&#10;&lt;image x='0' y='0' width='205' height='229' xlink:href='data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERET&#10;FhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4e&#10;Hh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCADlAM0DASIAAhEBAxEB/8QA&#10;HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh&#10;MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW&#10;V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG&#10;x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF&#10;BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV&#10;YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE&#10;hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq&#10;8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD6zMdjpzwadZwQWkEcQEUMSBEVeeABwOnSrpnjSItIyqoGSScA&#10;D61zPji6a3vRIfuJDnP5muY1i3TUGineSVjGVZFEzBDjpkA4P86FJBKF1csfEqzh1nZLbkOYh8mBkNkj&#10;JH1A/QV434/0PSdQ8dXepzReZKr7GGSAXUnk989B+Ar2SzkO+PzpAzFxkkAfp6CvIdTmM2oXEuPvzM35&#10;k10YelGpN8x87xLmFbB4aPsXZtmN/YOjcf8AEttz7laP7C0XA/4llt/3wK0C2FB6e9VNSv7fT7Nrq6cK&#10;q9u7HsB6mu50aUVdpHwtPMsfVmoRqSbfmynf2vh/TbR7i5sLRUUcDyhlj6D3rM8JNYapcX0rWFsqoU2R&#10;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&#10;ID+bCE8vyvMxjBOc+afyoopLcbPTaKKKsk//2Q==&#10;'/&gt;&#10;&lt;/svg&gt;"/>
+            <property name="lastfilename" value="E:/ELECTRONICS/Microbit/Microbit_v4.jpg"/>
+            <property name="aspectratio" value=""/>
+            <property name="logo" value=""/>
+            <property name="originalWidth" value="72.335898"/>
+            <property name="originalHeight" value="80.804512"/>
+            <title>IMG1</title>
+            <views>
+                <breadboardView layer="breadboard">
+                    <geometry z="2.50002" x="-131.926" y="-176.922"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="744.755" y="-79.7031"/>
+                </schematicView>
+                <pcbView layer="icon">
+                    <geometry z="0" x="247.375" y="5"/>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="85410520" path=":/resources/parts/core/wire.fzp">
+            <title>Wire7</title>
+            <views>
+                <breadboardView layer="breadboardWire">
+                    <geometry z="3.5" x="72.9549" y="60.7958" x1="0" y1="0" x2="79.903" y2="2.60553" wireFlags="64"/>
+                    <wireExtras mils="22.2222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="85410536" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <pcbView layer="copper1trace">
+                    <geometry z="9.5" x="236.751" y="136.4" x1="0" y1="0" x2="-90.6083" y2="0" wireFlags="64"/>
+                    <wireExtras mils="11.1111" color="#f2c600" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="85410536" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+                <schematicView layer="schematicTrace">
+                    <geometry z="5.5" x="236.751" y="136.4" x1="0" y1="0" x2="-90.6083" y2="0" wireFlags="64"/>
+                    <wireExtras mils="9.7222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="85410536" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="85410523" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="Breadboard-RSR03MB102-ModuleID" modelIndex="5738" path="E:/ELECTRONICS/fritzing.0.9.2b.64.pc/fritzing.0.9.2b.64.pc/pdb/core/breadboard2.fzp">
+            <title>Breadboard1</title>
+            <views>
+                <breadboardView layer="breadboardbreadboard">
+                    <geometry z="1.5" x="-121.667" y="117"/>
+                    <connectors>
+                        <connector connectorId="pin30X" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410533" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11C" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="5789" layer="breadboard"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11D" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410560" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11E" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="5812" layer="breadboard"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin35Y" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410530" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11X" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="5789" layer="breadboard"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11Y" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="5812" layer="breadboard"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin19Y" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410543" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <pcbView layer="breadboardbreadboard">
+                    <geometry z="-1" x="0" y="0"/>
+                    <connectors>
+                        <connector connectorId="pin30X" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410533" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11C" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="5789" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11D" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410560" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11E" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="5812" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin35Y" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410530" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11X" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="5789" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11Y" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="5812" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin19Y" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410543" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+                <schematicView layer="breadboardbreadboard">
+                    <geometry z="-1" x="0" y="0"/>
+                    <connectors>
+                        <connector connectorId="pin30X" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410533" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11C" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="5789" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11D" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410560" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11E" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="5812" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin35Y" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410530" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11X" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="5789" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin11Y" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="5812" layer="schematic"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin19Y" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410543" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="85410530" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="85410530" path=":/resources/parts/core/wire.fzp">
+            <title>Wire10</title>
+            <views>
+                <breadboardView layer="breadboardWire">
+                    <geometry z="3.50002" x="197.779" y="135.425" x1="0" y1="0" x2="0.218234" y2="-0.425347" wireFlags="64"/>
+                    <wireExtras mils="22.2222" color="#418dd9" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin35Y" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <schematicView layer="schematicTrace">
+                    <geometry z="5.50001" x="197.779" y="135.425" x1="0" y1="0" x2="-2.84217e-14" y2="-3.89713" wireFlags="64"/>
+                    <wireExtras mils="9.7222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin35Y" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+                <pcbView layer="copper1trace">
+                    <geometry z="9.50001" x="197.779" y="135.425" x1="0" y1="0" x2="-2.84217e-14" y2="-3.89713" wireFlags="64"/>
+                    <wireExtras mils="11.1111" color="#f2c600" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin35Y" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="85410533" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="85410533" path=":/resources/parts/core/wire.fzp">
+            <title>Wire11</title>
+            <views>
+                <breadboardView layer="breadboardWire">
+                    <geometry z="3.5" x="152.962" y="80.8655" x1="0" y1="0" x2="0.0352243" y2="207.135" wireFlags="64"/>
+                    <wireExtras mils="22.2222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410536" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin30X" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <schematicView layer="schematicTrace">
+                    <geometry z="5.50002" x="216.291" y="72.0969" x1="0" y1="0" x2="-72.2919" y2="62.9031" wireFlags="64"/>
+                    <wireExtras mils="9.7222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410536" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin30X" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+                <pcbView layer="copper1trace">
+                    <geometry z="9.50002" x="216.291" y="72.0969" x1="0" y1="0" x2="-72.2919" y2="62.9031" wireFlags="64"/>
+                    <wireExtras mils="11.1111" color="#f2c600" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410536" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin30X" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="85410536" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="85410536" path=":/resources/parts/core/wire.fzp">
+            <title>Wire12</title>
+            <views>
+                <breadboardView layer="breadboardWire">
+                    <geometry z="3.5" x="152.858" y="63.4013" x1="0" y1="0" x2="0.104486" y2="17.4642" wireFlags="64"/>
+                    <wireExtras mils="22.2222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410520" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="85410533" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <schematicView layer="schematicTrace">
+                    <geometry z="5.50003" x="152.962" y="53.5856" x1="0" y1="0" x2="63.3284" y2="18.5114" wireFlags="64"/>
+                    <wireExtras mils="9.7222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410520" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="85410533" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+                <pcbView layer="copper1trace">
+                    <geometry z="9.50003" x="152.962" y="53.5856" x1="0" y1="0" x2="63.3284" y2="18.5114" wireFlags="64"/>
+                    <wireExtras mils="11.1111" color="#f2c600" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410520" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="85410533" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="85410543" path=":/resources/parts/core/wire.fzp">
+            <title>Wire15</title>
+            <views>
+                <breadboardView layer="breadboardWire">
+                    <geometry z="3.50003" x="52.9792" y="61.6643" x1="0" y1="0" x2="1.0203" y2="73.3401" wireFlags="64"/>
+                    <wireExtras mils="22.2222" color="#cc1414" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin19Y" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <schematicView layer="schematicTrace">
+                    <geometry z="5.50004" x="387" y="108" x1="0" y1="0" x2="100" y2="100" wireFlags="64"/>
+                    <wireExtras mils="9.7222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin19Y" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+                <pcbView layer="copper1trace">
+                    <geometry z="9.50004" x="270" y="234" x1="0" y1="0" x2="100" y2="100" wireFlags="64"/>
+                    <wireExtras mils="11.1111" color="#f2c600" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin19Y" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="85410550" path=":/resources/parts/core/wire.fzp">
+            <title>Wire18</title>
+            <views>
+                <breadboardView layer="breadboardWire">
+                    <geometry z="3.50004" x="-102.484" y="59.9273" x1="0" y1="0" x2="3.47404" y2="173.702" wireFlags="64"/>
+                    <wireExtras mils="22.2222" color="#25cc35" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="85410560" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <schematicView layer="schematicTrace">
+                    <geometry z="5.50005" x="585" y="-18" x1="0" y1="0" x2="100" y2="100" wireFlags="64"/>
+                    <wireExtras mils="9.7222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="85410560" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+                <pcbView layer="copper1trace">
+                    <geometry z="9.50005" x="477" y="108" x1="0" y1="0" x2="100" y2="100" wireFlags="64"/>
+                    <wireExtras mils="11.1111" color="#f2c600" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="85410560" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="85410557" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="85410560" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="85410560" path=":/resources/parts/core/wire.fzp">
+            <title>Wire21</title>
+            <views>
+                <breadboardView layer="breadboardWire">
+                    <geometry z="3.50004" x="-99.0103" y="233.629" x1="0" y1="0" x2="80.9928" y2="0.369886" wireFlags="64"/>
+                    <wireExtras mils="22.2222" color="#25cc35" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410550" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin11D" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <schematicView layer="schematicTrace">
+                    <geometry z="5.50007" x="-99.0103" y="233.629" x1="0" y1="0" x2="80.9928" y2="0.369886" wireFlags="64"/>
+                    <wireExtras mils="9.7222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410550" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin11D" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+                <pcbView layer="copper1trace">
+                    <geometry z="9.50007" x="-99.0103" y="233.629" x1="0" y1="0" x2="80.9928" y2="0.369886" wireFlags="64"/>
+                    <wireExtras mils="11.1111" color="#f2c600" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="85410550" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin11D" modelIndex="5738" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+            </views>
+        </instance>
+    </instances>
+</module>

@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module fritzingVersion="0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806" icon=".png">
+    <boards>
+        <board moduleId="TwoLayerRectanglePCBModuleID" title="Rectangular PCB - Resizable" instance="PCB1" width="6.34071cm" height="9.06399cm"/>
+    </boards>
+    <views>
+        <view name="breadboardView" backgroundColor="#ffffff" gridSize="0.1in" showGrid="1" alignToGrid="1" viewFromBelow="0"/>
+        <view name="schematicView" backgroundColor="#ffffff" gridSize="0.1in" showGrid="1" alignToGrid="1" viewFromBelow="0"/>
+        <view name="pcbView" backgroundColor="#333333" gridSize="0.1in" showGrid="1" alignToGrid="1" viewFromBelow="0" autorouteViaRingThickness="" DRC_Keepout="" GPG_Keepout="" autorouteTraceWidth="24" autorouteViaHoleSize=""/>
+    </views>
+    <instances>
+        <instance moduleIdRef="TwoLayerRectanglePCBModuleID" modelIndex="5751" path=":/resources/parts/core/rectangle_pcb_two_layers.fzp">
+            <property name="layers" value="2"/>
+            <property name="width" value="63.407122222222227"/>
+            <property name="height" value="90.639922222222211"/>
+            <title>PCB1</title>
+            <views>
+                <breadboardView layer="">
+                    <geometry z="0.50436" x="0" y="0"/>
+                </breadboardView>
+                <pcbView layer="board" locked="true">
+                    <geometry z="1.50432" x="184.424" y="-29.8059"/>
+                    <titleGeometry visible="false" x="388.594" y="-36.8059" z="13.0041" xOffset="204.171" yOffset="-7" textColor="#000000" fontSize="5">
+                        <displayKey key=""/>
+                    </titleGeometry>
+                </pcbView>
+                <schematicView layer="">
+                    <geometry z="0.50437" x="0" y="0"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="Breadboard-RSR03MB102-ModuleID" modelIndex="5753" path="C:/Users/julio/Desktop/fritzing.0.9.3b.64.pc/fritzing-parts/core/breadboard2.fzp">
+            <title>Breadboard1</title>
+            <views>
+                <breadboardView layer="breadboardbreadboard">
+                    <geometry z="1.50437" x="-4.66474" y="-1.77636e-15"/>
+                    <connectors>
+                        <connector connectorId="pin57F" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="19409" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin55F" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="19406" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <pcbView layer="breadboardbreadboard">
+                    <geometry z="-0.49569" x="0" y="0"/>
+                    <connectors>
+                        <connector connectorId="pin57F" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="19409" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin55F" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="19406" layer="copper1trace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+                <schematicView layer="breadboardbreadboard">
+                    <geometry z="-0.49564" x="0" y="0"/>
+                    <connectors>
+                        <connector connectorId="pin57F" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="19409" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="pin55F" layer="breadboardbreadboard">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="19406" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="19406" path=":/resources/parts/core/wire.fzp">
+            <title>Wire5156</title>
+            <views>
+                <breadboardView layer="breadboardWire">
+                    <geometry z="3.50273" x="495.612" y="82.7553" x1="0" y1="0" x2="-0.629523" y2="-1.75525" wireFlags="64"/>
+                    <wireExtras mils="22.2222" color="#418dd9" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin55F" modelIndex="5753" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <pcbView layer="copper1trace">
+                    <geometry z="9.5027" x="495.612" y="82.7553" x1="0" y1="0" x2="-0.919503" y2="-0.919503" wireFlags="64"/>
+                    <wireExtras mils="11.1111" color="#f2c600" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin55F" modelIndex="5753" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+                <schematicView layer="schematicTrace">
+                    <geometry z="5.50273" x="495.612" y="82.7553" x1="0" y1="0" x2="-0.919503" y2="-0.919503" wireFlags="64"/>
+                    <wireExtras mils="9.7222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin55F" modelIndex="5753" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="19409" path=":/resources/parts/core/wire.fzp">
+            <title>Wire5157</title>
+            <views>
+                <breadboardView layer="breadboardWire">
+                    <geometry z="3.50274" x="511.244" y="82.7553" x1="0" y1="0" x2="1.73894" y2="-1.75525" wireFlags="64"/>
+                    <wireExtras mils="22.2222" color="#418dd9" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin57F" modelIndex="5753" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <pcbView layer="copper1trace">
+                    <geometry z="9.50269" x="511.244" y="82.7553" x1="0" y1="0" x2="0" y2="-2.75851" wireFlags="64"/>
+                    <wireExtras mils="11.1111" color="#f2c600" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin57F" modelIndex="5753" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+                <schematicView layer="schematicTrace">
+                    <geometry z="5.50274" x="511.244" y="82.7553" x1="0" y1="0" x2="0" y2="-2.75851" wireFlags="64"/>
+                    <wireExtras mils="9.7222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="pin57F" modelIndex="5753" layer="breadboardbreadboard"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="ViaModuleID" modelIndex="638874" path=":/resources/parts/core/via.fzp">
+            <property name="hole size" value="0.4mm,0.3mm"/>
+            <title>Via1</title>
+            <views>
+                <breadboardView layer="copper0">
+                    <geometry z="6.50055" x="104.625" y="-174.375" wireFlags="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638886" layer="breadboardWire"/>
+                                <connect connectorId="connector0" modelIndex="638892" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <pcbView layer="copper0">
+                    <geometry z="5.50124" x="401.228" y="-30.7717" wireFlags="0"/>
+                </pcbView>
+                <schematicView layer="copper0">
+                    <geometry z="6.50055" x="-435.375" y="-282.375" wireFlags="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638886" layer="schematicTrace"/>
+                                <connect connectorId="connector0" modelIndex="638892" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="ViaModuleID" modelIndex="638877" path=":/resources/parts/core/via.fzp">
+            <property name="hole size" value="0.4mm,0.3mm"/>
+            <title>Via2</title>
+            <views>
+                <breadboardView layer="copper0">
+                    <geometry z="6.50057" x="104.625" y="-3.375" wireFlags="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="638886" layer="breadboardWire"/>
+                                <connect connectorId="connector1" modelIndex="638898" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <pcbView layer="copper0">
+                    <geometry z="5.50126" x="401.228" y="284.228" wireFlags="0"/>
+                </pcbView>
+                <schematicView layer="copper0">
+                    <geometry z="6.50057" x="-435.375" y="-111.375" wireFlags="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="638886" layer="schematicTrace"/>
+                                <connect connectorId="connector1" modelIndex="638898" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="638886" path=":/resources/parts/core/wire.fzp">
+            <title>Wire7450</title>
+            <views>
+                <breadboardView layer="breadboardWire">
+                    <geometry z="3.50268" x="405.333" y="-24.6667" x1="0" y1="0" x2="0" y2="310.667" wireFlags="4"/>
+                    <wireExtras mils="22.2222" color="#418dd9" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638874" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638877" layer="copper0"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <pcbView layer="copper1trace">
+                    <geometry z="9.50135" x="405" y="-27" x1="0" y1="0" x2="0" y2="315" wireFlags="4"/>
+                    <wireExtras mils="24" color="#f2c600" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638874" layer="copper1"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638877" layer="copper1"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+                <schematicView layer="schematicTrace">
+                    <geometry z="5.50268" x="405.333" y="-24.6667" x1="0" y1="0" x2="0" y2="310.667" wireFlags="4"/>
+                    <wireExtras mils="9.7222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638874" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638877" layer="copper0"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="ViaModuleID" modelIndex="638889" path=":/resources/parts/core/via.fzp">
+            <property name="hole size" value="0.4mm,0.3mm"/>
+            <title>Via3</title>
+            <views>
+                <breadboardView layer="copper0">
+                    <geometry z="6.50059" x="-21.375" y="-192.375" wireFlags="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="638892" layer="breadboardWire"/>
+                                <connect connectorId="connector1" modelIndex="638901" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <pcbView layer="copper0">
+                    <geometry z="5.50128" x="185.228" y="-30.7717" wireFlags="0"/>
+                </pcbView>
+                <schematicView layer="copper0">
+                    <geometry z="6.50059" x="-561.375" y="-300.375" wireFlags="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector1" modelIndex="638892" layer="schematicTrace"/>
+                                <connect connectorId="connector1" modelIndex="638901" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="638892" path=":/resources/parts/core/wire.fzp">
+            <title>Wire7451</title>
+            <views>
+                <breadboardView layer="breadboardWire">
+                    <geometry z="3.50269" x="404" y="-24.6667" x1="0" y1="0" x2="-214" y2="-2.66667" wireFlags="4"/>
+                    <wireExtras mils="22.2222" color="#418dd9" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638874" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638889" layer="copper0"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <pcbView layer="copper1trace">
+                    <geometry z="9.50134" x="405" y="-27" x1="0" y1="0" x2="-216" y2="-3.55271e-15" wireFlags="4"/>
+                    <wireExtras mils="24" color="#f2c600" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638874" layer="copper1"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638889" layer="copper1"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+                <schematicView layer="schematicTrace">
+                    <geometry z="5.50269" x="404" y="-24.6667" x1="0" y1="0" x2="-214" y2="-2.66667" wireFlags="4"/>
+                    <wireExtras mils="9.7222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638874" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638889" layer="copper0"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="ViaModuleID" modelIndex="638895" path=":/resources/parts/core/via.fzp">
+            <property name="hole size" value="0.4mm,0.3mm"/>
+            <title>Via4</title>
+            <views>
+                <breadboardView layer="copper0">
+                    <geometry z="6.5006" x="-21.375" y="104.625" wireFlags="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638898" layer="breadboardWire"/>
+                                <connect connectorId="connector0" modelIndex="638901" layer="breadboardWire"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <pcbView layer="copper0">
+                    <geometry z="5.5013" x="185.228" y="284.228" wireFlags="0"/>
+                </pcbView>
+                <schematicView layer="copper0">
+                    <geometry z="6.5006" x="-561.375" y="-3.375" wireFlags="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper0">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638898" layer="schematicTrace"/>
+                                <connect connectorId="connector0" modelIndex="638901" layer="schematicTrace"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="638898" path=":/resources/parts/core/wire.fzp">
+            <title>Wire7452</title>
+            <views>
+                <breadboardView layer="breadboardWire">
+                    <geometry z="3.5027" x="192.667" y="286.667" x1="0" y1="0" x2="211.333" y2="1.33333" wireFlags="4"/>
+                    <wireExtras mils="22.2222" color="#418dd9" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638895" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638877" layer="copper0"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <pcbView layer="copper1trace">
+                    <geometry z="9.50133" x="189" y="288" x1="0" y1="0" x2="216" y2="0" wireFlags="4"/>
+                    <wireExtras mils="24" color="#f2c600" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638895" layer="copper1"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638877" layer="copper1"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+                <schematicView layer="schematicTrace">
+                    <geometry z="5.5027" x="192.667" y="286.667" x1="0" y1="0" x2="211.333" y2="1.33333" wireFlags="4"/>
+                    <wireExtras mils="9.7222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638895" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638877" layer="copper0"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="638901" path=":/resources/parts/core/wire.fzp">
+            <title>Wire7453</title>
+            <views>
+                <breadboardView layer="breadboardWire">
+                    <geometry z="3.50271" x="191.333" y="287.333" x1="0" y1="0" x2="-3.33333" y2="-314" wireFlags="4"/>
+                    <wireExtras mils="22.2222" color="#418dd9" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638895" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="breadboardWire">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638889" layer="copper0"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </breadboardView>
+                <pcbView layer="copper1trace">
+                    <geometry z="9.50132" x="189" y="288" x1="0" y1="0" x2="-5.68434e-14" y2="-315" wireFlags="4"/>
+                    <wireExtras mils="24" color="#f2c600" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638895" layer="copper1"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="copper1trace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638889" layer="copper1"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </pcbView>
+                <schematicView layer="schematicTrace">
+                    <geometry z="5.50271" x="191.333" y="287.333" x1="0" y1="0" x2="-3.33333" y2="-314" wireFlags="4"/>
+                    <wireExtras mils="9.7222" color="#404040" opacity="1" banded="0"/>
+                    <connectors>
+                        <connector connectorId="connector0" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638895" layer="copper0"/>
+                            </connects>
+                        </connector>
+                        <connector connectorId="connector1" layer="schematicTrace">
+                            <geometry x="0" y="0"/>
+                            <connects>
+                                <connect connectorId="connector0" modelIndex="638889" layer="copper0"/>
+                            </connects>
+                        </connector>
+                    </connectors>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640147" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640157" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640223" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640233" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640239" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640241" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640248" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640250" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640260" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640316" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="segundo"/>
+            <property name="width" value="17.780000000000001"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 70 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.7in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;35&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;segundo&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT1</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0047" x="363.385" y="215.938">
+                        <transform m11="-5.55112e-17" m12="1" m13="0" m21="-1" m22="-5.55112e-17" m23="0" m31="37.35" m32="-25.65" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="86.6713" y="40.9243"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="230.94" y="93.6989"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640319" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="am"/>
+            <property name="width" value="5.0800000000000001"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 20 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.2in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;10&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;am&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT2</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0047" x="197.208" y="124.039">
+                        <transform m11="-5.55112e-17" m12="1" m13="0" m21="-1" m22="-5.55112e-17" m23="0" m31="14.85" m32="-3.15" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="-14.5616" y="-102.549"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="129.707" y="-49.774"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640322" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="pm"/>
+            <property name="width" value="5.0800000000000001"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 20 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.2in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;10&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;pm&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT3</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0047" x="197.208" y="143.777">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="14.85" m32="-3.15" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="56.7498" y="-5.13201"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="201.018" y="47.6426"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640325" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="1"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;1&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT4</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0047" x="255.551" y="156.277">
+                        <transform m11="1.38778e-17" m12="1" m13="0" m21="-1" m22="1.38778e-17" m23="0" m31="10.5856" m32="1.34794" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="26.1878" y="-32.5105"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="170.456" y="20.2641"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640328" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="2"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;2&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT5</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0047" x="265.336" y="109.394">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="63.7536" y="-98.0916"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="208.022" y="-45.317"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640331" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="3"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;3&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT6</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0047" x="273.613" y="156.511">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="221.021" y="-47.7915"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="365.289" y="4.98304"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640334" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="4"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 10 13&quot;  width=&quot;0.1in&quot; height=&quot;0.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;4&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT7</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0047" x="251.328" y="104.937">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="43.2997" m32="5.64779" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="226.751" y="-51.6118"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="371.019" y="1.16279"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640337" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="5"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;5&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT8</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0048" x="293.351" y="156.271">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="226.114" y="-65.2226"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="370.383" y="-12.448"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640340" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="6"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;6&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT9</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0048" x="309.905" y="111.305">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="230.571" y="-75.17"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="374.84" y="-22.3955"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640346" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="7"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;7&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT10</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0048" x="324.55" y="155.874">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="133.155" y="-8.31556"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="277.423" y="44.459"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640349" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="8"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;8&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT11</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0048" x="327.643" y="110.611">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="282.055" y="-75.8631"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="426.323" y="-23.0885"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640352" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="9"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;9&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT12</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0048" x="339.288" y="155.818">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="241.489" y="-86.0504"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="385.757" y="-33.2758"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640355" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="10"/>
+            <property name="width" value="3.8703217920122017"/>
+            <property name="height" value="2.5157091648079311"/>
+            <property name="shape" value="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 20 13&quot;  width=&quot;0.152375in&quot; height=&quot;0.0990437in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;10&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;10&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT13</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0048" x="343.217" y="108.234">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="11.3138" m32="-2.3999" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="270.774" y="-83.0504"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="415.042" y="-30.2758"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640358" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="11"/>
+            <property name="width" value="3.8703217920122017"/>
+            <property name="height" value="2.5157091648079311"/>
+            <property name="shape" value="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 20 13&quot;  width=&quot;0.152375in&quot; height=&quot;0.0990437in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;10&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;11&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT14</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0048" x="353.952" y="158.137">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="11.3138" m32="-2.3999" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="139.522" y="-17.8662"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="283.79" y="34.9084"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640361" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="12"/>
+            <property name="width" value="3.8703217920122017"/>
+            <property name="height" value="2.5157091648079311"/>
+            <property name="shape" value="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 20 13&quot;  width=&quot;0.152375in&quot; height=&quot;0.0990437in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;10&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;12&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT15</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0048" x="362.229" y="109.11">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="11.3138" m32="-2.3999" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="267.501" y="-60.5257"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="411.769" y="-7.75114"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640364" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="hora"/>
+            <property name="width" value="10.16"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 40 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.4in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;20&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;hora&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT16</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0048" x="369.756" y="132.316">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="23.85" m32="-12.15" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="224.841" y="-66.8928"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="369.109" y="-14.1182"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640367" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="10"/>
+            <property name="width" value="5.0800000000000001"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 20 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.2in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;10&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;10&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT17</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0049" x="327.733" y="5.61077">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="14.85" m32="-3.15" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="237.575" y="-115.283"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="381.843" y="-62.5081"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640370" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="20"/>
+            <property name="width" value="5.0800000000000001"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 20 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.2in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;10&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;20&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT18</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0049" x="353.202" y="11.9779">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="14.85" m32="-3.15" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="250.309" y="-86.6308"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="394.578" y="-33.8562"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640373" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="30"/>
+            <property name="width" value="5.0800000000000001"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 20 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.2in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;10&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;30&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT19</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0049" x="383.764" y="34.8994">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="14.85" m32="-3.15" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="250.309" y="-56.7055"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="394.578" y="-3.93089"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640376" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="40"/>
+            <property name="width" value="5.0800000000000001"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 20 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.2in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;10&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;40&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT20</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0049" x="353.202" y="54.0007">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="14.85" m32="-3.15" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="261.133" y="-29.9637"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="405.402" y="22.8109"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640379" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="50"/>
+            <property name="width" value="5.0800000000000001"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 20 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.2in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;10&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;50&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT21</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0049" x="327.096" y="63.5513">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="14.85" m32="-3.15" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="254.766" y="2.5085"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="399.035" y="55.2831"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640382" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="1"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;1&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT22</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0049" x="220.766" y="46.9969">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="-1.82745" y="-122.923"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="142.441" y="-70.1487"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640385" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="2"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;2&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT23</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0049" x="229.043" y="2.42722">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="262.407" y="-76.4435"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="406.675" y="-23.6689"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640388" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="3"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;3&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT24</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0049" x="237.957" y="46.9969">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="256.677" y="-70.0764"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="400.945" y="-17.3018"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640391" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="4"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;4&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT25</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0049" x="246.234" y="2.42722">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="280.871" y="-64.346"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="425.14" y="-11.5714"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640394" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="5"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;5&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT26</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.0049" x="257.058" y="46.3602">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="199.373" y="-80.9004"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="343.641" y="-28.1258"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640397" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="6"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;6&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT27</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.005" x="265.336" y="1.79051">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="207.013" y="-75.8067"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="351.281" y="-23.0322"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640400" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="7"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;7&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT28</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.005" x="260.242" y="60.3678">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="23.85" m32="-12.15" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="228.661" y="-58.6156"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="372.929" y="-5.84101"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640403" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="8"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;8&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT29</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.005" x="284.437" y="1.46077">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="207.013" y="-67.2226"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="351.281" y="-14.448"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640406" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="9"/>
+            <property name="width" value="2.54"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 10 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.1in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;5&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;9&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT30</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.005" x="292.171" y="47.0304">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="10.35" m32="1.35" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="199.466" y="-91.6909"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="343.735" y="-38.9164"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="LogoTextModuleID" modelIndex="640409" path=":/resources/parts/core/logotext.fzp">
+            <property name="logo" value="minutos"/>
+            <property name="width" value="17.780000000000001"/>
+            <property name="height" value="3.302"/>
+            <property name="shape" value="&lt;svg viewBox=&quot;0 0 70 13&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;0.7in&quot; height=&quot;.13in&quot;&gt;&#10; &lt;g id=&quot;silkscreen&quot;&gt;&#10;  &lt;text fill=&quot;#000000&quot; x=&quot;35&quot; xml:space=&quot;preserve&quot; font-family=&quot;OCRA&quot; stroke-width=&quot;0&quot; y=&quot;9&quot; id=&quot;label&quot; font-size=&quot;10&quot; text-anchor=&quot;middle&quot;&gt;minutos&lt;/text&gt;&#10; &lt;/g&gt;&#10;&lt;/svg&gt;&#10;"/>
+            <property name="lastfilename" value=":/resources/parts/svg/core/pcb/logo.svg"/>
+            <title>TXT31</title>
+            <views>
+                <pcbView layer="silkscreen">
+                    <geometry z="12.005" x="176.196" y="29.8057">
+                        <transform m11="0" m12="1" m13="0" m21="-1" m22="0" m23="0" m31="37.35" m32="-25.65" m33="1"/>
+                    </geometry>
+                </pcbView>
+                <breadboardView layer="icon">
+                    <geometry z="0" x="243.306" y="-74.5333"/>
+                </breadboardView>
+                <schematicView layer="icon">
+                    <geometry z="0" x="387.574" y="-21.7587"/>
+                </schematicView>
+            </views>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640422" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640424" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640426" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640428" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640442" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+        <instance moduleIdRef="WireModuleID" modelIndex="640458" path=":/resources/parts/core/wire.fzp">
+            <views/>
+        </instance>
+    </instances>
+</module>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<netlist date="Wed Sep 18 15:37:43 2019" sketch="id1952_Heating_system_0.fz">
+ <net>
+  <connector name="wiper" id="connector1">
+   <part title="Trimmer Potentiometer" label="R2 = Potmeter" id="66600"/>
+  </connector>
+  <connector name="G1 +IN" id="connector2">
+   <part title="LM393" label="OPAMP" id="66960"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="anode" id="connector1">
+   <part title="Red (633nm) LED" label="Red LED" id="72810"/>
+  </connector>
+  <connector name="Pin 1" id="connector1">
+   <part title="220Ω Resistor" label="R3 = 220 Ohms" id="69530"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="G" id="connector0">
+   <part title="MOSFET-NCHANNEL" label="N-FET" id="67710"/>
+  </connector>
+  <connector name="G1 OUT" id="connector0">
+   <part title="LM393" label="OPAMP" id="66960"/>
+  </connector>
+  <connector name="Pin 0" id="connector0">
+   <part title="220Ω Resistor" label="R3 = 220 Ohms" id="69530"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="leg1" id="connector0">
+   <part title="Trimmer Potentiometer" label="R2 = Potmeter" id="66600"/>
+  </connector>
+  <connector name="Pin 1" id="connector1">
+   <part title="220Ω Resistor" label="R1 = 4.7k Ohms" id="77950"/>
+  </connector>
+  <connector name="S" id="connector2">
+   <part title="MOSFET-NCHANNEL" label="N-FET" id="67710"/>
+  </connector>
+  <connector name="cathode" id="connector0">
+   <part title="Red (633nm) LED" label="Red LED" id="72810"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="D" id="connector1">
+   <part title="MOSFET-NCHANNEL" label="N-FET" id="67710"/>
+  </connector>
+  <connector name="Pin 1" id="connector1">
+   <part title="220Ω Resistor" label="Heating element" id="80520"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="G1 V+" id="connector7">
+   <part title="LM393" label="OPAMP" id="66960"/>
+  </connector>
+  <connector name="Pin 0" id="connector0">
+   <part title="220Ω Resistor" label="Heating element" id="80520"/>
+  </connector>
+  <connector name="leg2" id="connector2">
+   <part title="Trimmer Potentiometer" label="R2 = Potmeter" id="66600"/>
+  </connector>
+  <connector name="pin 1" id="connector1">
+   <part title="Temperature Sensor (Thermistor)" label="R1" id="77830"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="G1 -IN" id="connector1">
+   <part title="LM393" label="OPAMP" id="66960"/>
+  </connector>
+  <connector name="Pin 0" id="connector0">
+   <part title="220Ω Resistor" label="R1 = 4.7k Ohms" id="77950"/>
+  </connector>
+  <connector name="pin 0" id="connector0">
+   <part title="Temperature Sensor (Thermistor)" label="R1" id="77830"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="G2 +IN" id="connector4">
+   <part title="LM393" label="OPAMP" id="66960"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="G1 V-" id="connector3">
+   <part title="LM393" label="OPAMP" id="66960"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="G2 -IN" id="connector5">
+   <part title="LM393" label="OPAMP" id="66960"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="G2 OUT" id="connector6">
+   <part title="LM393" label="OPAMP" id="66960"/>
+  </connector>
+ </net>
+</netlist>
